@@ -4,150 +4,75 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <meta name="theme-color" content="#ffffff">
-  <title>Minutes of a Wandering Mind — E. Haji-Touma<title>
-  <meta name="description" content="Jesch Contemporary Presents the artwork 'Minutes of a Wandering Mind'.">
-  <!-- (Optional) Social preview; update once your GIF is online -->
+  <title>Minutes of a Wandering Mind — E. Haji-Touma</title>
+  <meta name="description" content="Jesch Contemporary presents the artwork ‘Minutes of a Wandering Mind’.">
+  <!-- (Optional) Social preview; use absolute URL for og:image -->
   <meta property="og:title" content="Minutes of a Wandering Mind">
   <meta property="og:description" content="Looping pencil sketch animation, presented by the gallery.">
   <meta property="og:type" content="website">
-  <meta property="og:image" content="video.gif">
+  <meta property="og:image" content="https://yourdomain.example/video.gif">
   <style>
-    /* Minimal, artsy: white bg, black text, centered. No borders/shadows. */
-    :root {
-      --size: min(94vmin, 720px); /* media size: friendly on phones */
-      --pad: max(20px, env(safe-area-inset-left));
-    }
+    :root { --size: min(94vmin, 720px); --pad: max(20px, env(safe-area-inset-left)); }
     html, body { height: 100%; background: #fff; color: #000; }
-    body {
-      margin: 0;
-      font: 12px/1.6 ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-      -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale;
-    }
-    .wrap {
-      max-width: 980px;
-      margin: 0 auto;
-      padding: calc(28px + env(safe-area-inset-top)) var(--pad) 64px;
-      text-align: center;
-    }
-    .eyebrow {
-      letter-spacing: .12em;
-      text-transform: uppercase;
-      font-size: .78rem;
-      opacity: .65;
-      margin: 4px 0 14px;
-    }
-    h1 {
-      margin: 0;
-      font-weight: 200;
-      font-size: clamp(1.12rem, 0.84rem + 2.1vw, 1.82rem);
-    }
-    .byline {
-      margin: 8px 0 0;
-      opacity: .75;
-    }
-    .media {
-      width: var(--size);
-      height: auto;
-      display: block;
-      margin: 28px auto 10px;
-      /* no border */
-    }
-    .caption {
-      margin: 0;
-      opacity: .72;
-      font-size: .95rem;
-    }
+    body { margin: 0; font: 12px/1.6 ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+    .wrap { max-width: 980px; margin: 0 auto; padding: calc(28px + env(safe-area-inset-top)) var(--pad) 64px; text-align: center; }
+    .eyebrow { letter-spacing: .12em; text-transform: uppercase; font-size: .78rem; opacity: .65; margin: 4px 0 14px; }
+    h1 { margin: 0; font-weight: 200; font-size: clamp(1.12rem, 0.84rem + 2.1vw, 1.82rem); }
+    .byline { margin: 8px 0 0; opacity: .75; }
+    .media { width: var(--size); height: auto; display: block; margin: 28px auto 10px; }
+    .caption { margin: 0; opacity: .72; font-size: .95rem; }
     .spacer { height: 22px; }
-    .note {
-      max-width: 720px;
-      margin: 0 auto;
-      opacity: .86;
-    }
-    .hr {
-      height: 1px;
-      width: min(160px, 40%);
-      background: #000;
-      opacity: .15;
-      margin: 28px auto;
-    }
-    .details {
-      margin: 0 auto;
-      opacity: .7;
-      font-size: .95rem;
-    }
-    .details span { 
-      white-space: nowrap; 
-          border-bottom: 1px solid #000;
-      padding-bottom: 2px;
-    }
-    .logo {
-  display: block;
-  margin: 0 auto 16px;     /* centers + small gap below */
-  width: min(220px, 40vw); /* responsive max width */
-  height: auto;            /* keep aspect ratio */
-}
+    .note { max-width: 720px; margin: 0 auto; opacity: .86; }
+    .hr { height: 1px; width: min(160px, 40%); background: #000; opacity: .15; margin: 28px auto; }
+    .details { margin: 0 auto; opacity: .7; font-size: .95rem; }
+    .details span { white-space: nowrap; border-bottom: 1px solid #000; padding-bottom: 2px; }
+    .logo { display: block; margin: 0 auto 16px; width: min(220px, 40vw); height: auto; }
     .price { margin: 12px 0 0; opacity: .8; font-size: .95rem; }
-    .link-plain { 
-  color:#000;
-  text-decoration:none;
-  display:inline-block;
-  border-bottom:1px solid #000;
-  padding-bottom:2px;
-    }
-    .cta {
-      display: inline-block;
-      margin-top: 22px;
-      text-decoration: none;
-      color: #000;
-      border-bottom: 1px solid #000;
-      padding-bottom: 2px;
-    }
-    footer {
-      margin-top: 48px;
-      opacity: .55;
-      font-size: .9rem;
-    }
+    .link-plain { color:#000; text-decoration:none; display:inline-block; border-bottom:1px solid #000; padding-bottom:2px; }
+    .cta { display: inline-block; margin-top: 22px; text-decoration: none; color: #000; border-bottom: 1px solid #000; padding-bottom: 2px; }
+    footer { margin-top: 48px; opacity: .55; font-size: .9rem; }
   </style>
 </head>
 <body>
   <main class="wrap">
-        <img
-  class="logo"
-  src="logo.png"
-  alt="Jesch Contemporary">
+    <img class="logo" src="logo.png" alt="Jesch Contemporary">
     <div class="eyebrow">Jesch Contemporary<br>Presents</div>
+
     <h1>E. Haji-Touma</h1>
-    <p class="byline"><em>Minutes of a Wandering Mind<em>, 2025 Series</p>
+    <p class="byline"><em>Minutes of a Wandering Mind</em>, 2025 Series</p>
     <p class="byline">Graphite on notebook paper</p>
-    <!-- Prefer WebP for size; GIF as fallback -->
+
     <picture>
       <!-- <source srcset="assets/output.webp" type="image/webp"> -->
-      <img class="media" src="video.gif" alt="Looping square animation of pencil scribbles gradually forming and dissolving, titled Lazy Notes of a Friday Afternoon.">
+      <img class="media" src="video.gif" alt="Minutes of a Wandering Mind — looping square animation of pencil scribbles forming and dissolving.">
     </picture>
+
     <div class="hr" role="presentation"></div>
-<p class="price"><strong>&pound;350.00</strong></p>
-     <br>
-            <p class="note">
-<em>Friday Afternoon Call Notes</em> traces the idle choreography of graphite as attention loosens. 
-  Through patient repetition, incidental marks gather into motifs that feel discovered rather than designed. 
-  What begins as casual notation organizes itself, proposing a legibility that precedes language. 
-  The work lingers at the threshold between intention and drift, where pattern lets the subconscious surface without announcing itself.
-</p>
+
+    <p class="price"><strong>&pound;350.00</strong></p>
+
+    <p class="note">
+      <em>Minutes of a Wandering Mind</em> traces the idle choreography of graphite as attention loosens.
+      Through patient repetition, incidental marks gather into motifs that feel discovered rather than designed.
+      What begins as casual notation organizes itself, proposing a legibility that precedes language.
+      The work lingers at the threshold between intention and drift, where pattern lets the subconscious surface without announcing itself.
+    </p>
+
     <br>
-    <a class="link-plain"
-   href="https://www.linkedin.com/in/evans-haji-touma-014240/" target="_blank" rel="noopener">
-    Get to know the artist
-</a>
+
+    <a class="link-plain" href="https://www.linkedin.com/in/evans-haji-touma-014240/" target="_blank" rel="noopener noreferrer">
+      Get to know the artist
+    </a>
+
     <br>
-<a
-  class="cta"
-  href="mailto:press@jeschco.com
-         ?subject=Press%20kit%20request%20%E2%80%94%20Friday%20Afternoon%20Call%20Notes
-         &body=Hello%20Gallery%20Team,%0D%0A%0D%0AI%E2%80%99d%20like%20the%20press%20kit%20for%20%E2%80%9CFriday%20Afternoon%20Call%20Notes.%E2%80%9D%0D%0A%0D%0AThank%20you!"
-  target="_blank"
-  rel="noopener"
->Request press kit </a>
-    <footer>© 2025 Jesch & Co · All rights reserved</footer>
+
+    <a class="cta"
+       href="mailto:press@jeschco.com?subject=Press%20kit%20request%20%E2%80%94%20Minutes%20of%20a%20Wandering%20Mind&body=Hello%20Gallery%20Team,%0D%0A%0D%0AI%E2%80%99d%20like%20the%20press%20kit%20for%20%E2%80%9CMinutes%20of%20a%20Wandering%20Mind.%E2%80%9D%0D%0A%0D%0AThank%20you!"
+       target="_blank" rel="noopener">
+      Request press kit
+    </a>
+
+    <footer>© 2025 Jesch &amp; Co · All rights reserved</footer>
   </main>
 </body>
 </html>
